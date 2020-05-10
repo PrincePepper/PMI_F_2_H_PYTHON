@@ -1,0 +1,6 @@
+Petrov envelope 20
+Petrov pens 5
+Ivanov marker 3
+Ivanov paper 7
+Ivanov paper 10
+Ivanov envelope 5
