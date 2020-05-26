@@ -17,8 +17,8 @@ def print_board(board):  # Распечатать доску в текстово
 
 
 def correct_coords(row, col):
-    '''Функция проверяет, что координаты (row, col) лежат
-    внутри доски'''
+    """Функция проверяет, что координаты (row, col) лежат
+    внутри доски"""
     return 0 <= row < 8 and 0 <= col < 8
 
 
@@ -47,9 +47,9 @@ class Board:
         return self.color
 
     def cell(self, row, col):
-        '''Возвращает строку из двух символов. Если в клетке (row, col)
+        """Возвращает строку из двух символов. Если в клетке (row, col)
         находится фигура, символы цвета и фигуры. Если клетка пуста,
-        то два пробела.'''
+        то два пробела."""
         piece = self.field[row][col]
         if piece is None:
             return '  '
@@ -62,9 +62,9 @@ class Board:
             return self.field[row][col]
 
     def move_piece(self, row, col, row1, col1):
-        ''' Переместить фигуру из точки (row, col) в точку (row1, col1).
+        """ Переместить фигуру из точки (row, col) в точку (row1, col1).
         Если перемещение возможно, метод выполнит его и вернёт True.
-        Если нет --- вернёт False '''
+        Если нет --- вернёт False """
 
         if not correct_coords(row, col) or not correct_coords(row1, col1):
             return False
