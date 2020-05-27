@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>706</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>471</width>
+      <height>482</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_1_1">
+       <property name="text">
+        <string>50</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>images/image1.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QCheckBox" name="checkBox_5">
+       <property name="text">
+        <string>Кола</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="checkBox_2">
+       <property name="text">
+        <string>соус</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>images/image5.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>images/image4.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QSpinBox" name="spinBox_4"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_3_3">
+       <property name="text">
+        <string>150</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="checkBox_1">
+       <property name="text">
+        <string>крылышки</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>images/image3.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_2_2">
+       <property name="text">
+        <string>30</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="checkBox_4">
+       <property name="text">
+        <string>бургер</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>images/image2.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLabel" name="label_5_5">
+       <property name="text">
+        <string>180</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QSpinBox" name="spinBox_1"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QSpinBox" name="spinBox_2"/>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_4_4">
+       <property name="text">
+        <string>500</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QCheckBox" name="checkBox_3">
+       <property name="text">
+        <string>нагетсы</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QSpinBox" name="spinBox_5"/>
+     </item>
+     <item row="2" column="3">
+      <widget class="QSpinBox" name="spinBox_3"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>493</x>
+      <y>10</y>
+      <width>201</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>530</y>
+      <width>111</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Показать чек</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>10</y>
+      <width>471</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="photoColumn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="nameColumn">
+       <property name="text">
+        <string>Наименование</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="costColumn">
+       <property name="text">
+        <string>Стоимость</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="numberColumn">
+       <property name="text">
+        <string>Кол-во</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>706</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>checkBox_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_1</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>485</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_2</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>217</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>464</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_3</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_3</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>239</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>437</x>
+     <y>237</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_4</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_4</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>320</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>317</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_5</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>400</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>616</x>
+     <y>539</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>506</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
