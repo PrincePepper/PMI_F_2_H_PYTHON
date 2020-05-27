@@ -1,17 +1,22 @@
+# Есть два способа подключить дизайн
+# Способ первый: подключить ui-файл.
 import sys
 
-import HTML_editor
-from PyQt5 import QtWidgets
+from PyQt5 import uic
+from PyQt5.QtWidgets import QApplication, QMainWindow
 
 
-class ExampleApp(QtWidgets.QMainWindow, HTML_editor.Ui_MainWindow):
+class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setupUi(self)
+        uic.loadUi('HTML_editor.ui', self)
+        self.pushButton.clicked.connect(self.run)
+
+    def run(self):
+        self.output.setText(self.input.toPlainText())
 
 
-if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    window = ExampleApp()
-    window.show()
-    app.exec_()
+app = QApplication(sys.argv)
+ex = MyWidget()
+ex.show()
+sys.exit(app.exec_())
