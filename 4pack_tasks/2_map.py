@@ -6,3 +6,4 @@ values = [int(i) for i in input().split()]
 operation = lambda x: x + 5
 
 exit(my_map(operation, values))
+

@@ -8,15 +8,11 @@ def isPrime(a):
 
 
 def polindrom(b):
-    if b != b[::-1]:
-        return False
-    return True
+    return b == b[::-1]
 
 
 def stepenTwo(c):
-    if c & (c - 1):
-        return False
-    return True
+    return not c & (c - 1)
 
 
 def check_pin(pinCode):
@@ -27,4 +23,4 @@ def check_pin(pinCode):
         return "Некорректен"
 
 
-print(check_pin('12-22-16'))
+print(check_pin('7-101-4'))

@@ -1,9 +1,9 @@
-def trantformStr_to_int(cell):
-    list_all_cell_number = dict
+def trantformStr_to_int(cell):  # B1
     list_all_cell_number = {'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7, 'H': 8}
     for i in list_all_cell_number.keys():
         if cell[0] == i:
             return list_all_cell_number[i], int(cell[1])
+    return exit("Ошибка входных данных")
 
 
 def transtfomInt_to_str(cell):
