@@ -24,3 +24,5 @@ class Thing(BaseObject):
 
 
 minecraft = BaseObject(4, 5, 0)
+
+print(minecraft.coord_3d)

@@ -30,11 +30,11 @@ class MyWidget(PyQt5.QtWidgets.QMainWindow):
                 self.__finalCost += self.__spinBox[i].value() * int(self.__cost[i].text())
 
         if self.__temp:
+            self.plainTextEdit.setPlainText(self.check)
+        else:
             self.check += '\n\n\n\n' + 'Итого: ' + str(self.__finalCost)
             if self.check[-2::] != ' 0':
                 self.plainTextEdit.setPlainText(self.check)
-        else:
-            self.plainTextEdit.setPlainText(self.check)
 
 
 app = PyQt5.QtWidgets.QApplication(sys.argv)

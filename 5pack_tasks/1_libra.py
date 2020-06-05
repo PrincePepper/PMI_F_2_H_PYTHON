@@ -20,8 +20,6 @@ class Balance:
 
 balance = Balance()
 balance.add_right(10)
-balance.add_left(5)
-balance.add_left(5)
-print(balance.result())
-balance.add_left(1)
+balance.add_left(9)
+balance.add_left(2)
 print(balance.result())
