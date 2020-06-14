@@ -35,13 +35,31 @@ def parse_coords(coords):
 
 
 class Board:
+    '''Класс доски  '''
     def __init__(self):
         self.color = WHITE
         self.field = [[None] * 8 for row in range(8)]
 
-    #         заполнение доски фигурами
-    #         self.field[1][0] = Pawn(WHITE)
-    # TODO заполнить доску фигурами
+        ''' Задаем начальное расположение фигур на доске: '''
+        # Верх
+        # self.field[0] = [
+        #     Rook(WHITE), Knight(WHITE), Bishop(WHITE), Queen(WHITE),
+        #     King(WHITE), Bishop(WHITE), Knight(WHITE), Rook(WHITE)
+        # ]
+        # self.field[1] = [
+        #     Pawn(WHITE), Pawn(WHITE), Pawn(WHITE), Pawn(WHITE),
+        #     Pawn(WHITE), Pawn(WHITE), Pawn(WHITE), Pawn(WHITE)
+        # ]
+
+        # #Вниз
+        # self.field[6] = [
+        #     Pawn(BLACK), Pawn(BLACK), Pawn(BLACK), Pawn(BLACK),
+        #     Pawn(BLACK), Pawn(BLACK), Pawn(BLACK), Pawn(BLACK)
+        # ]
+        # self.field[7] = [
+        #     Rook(BLACK), Knight(BLACK), Bishop(BLACK), Queen(BLACK),
+        #     King(BLACK), Bishop(BLACK), Knight(BLACK), Rook(BLACK)
+        # ]
 
     def current_player_color(self):
         return self.color
