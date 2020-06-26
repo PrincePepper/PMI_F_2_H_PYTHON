@@ -159,7 +159,6 @@ class Pawn(Piece):
 
     def can_move(self, board, row, col, row1, col1):
         # Пешка может ходить только по вертикали
-        # "взятие на проходе" не реализовано
         if col != col1:
             return False
 
@@ -183,6 +182,7 @@ class Pawn(Piece):
             return True
         return False
 
+    # "взятие на проходе" не реализовано
     def can_attack(self, board, row, col, row1, col1):
         if not (board.field[row1][col1] and board.field[row1][col1].color == opponent(self.color)):
             return False
@@ -303,46 +303,58 @@ class King(Piece):
 
 def main():
     row0 = 0
-    col0 = 3
-    knight = King(WHITE)
+    col0 = 4
     board = Board()
+    board.field = [([None] * 8) for i in range(8)]
+    board.field[row0][col0] = Knight(BLACK)
+    bishop = board.get_piece(row0, col0)
+    # for row in range(7, -1, -1):
+    #     for col in range(8):
+    #         if bishop.can_move(board, row0, col0, row, col):
+    #             print('x', end='')
+    #         else:
+    #             cell = board.cell(row, col)[1]
+    #             cell = cell if cell != ' ' else '-'
+    #             print(cell, end='')
+    #     print()
+
     for row in range(7, -1, -1):
         for col in range(8):
             if row == row0 and col == col0:
-                print(knight.char(), end='')
-            elif knight.can_move(board, row0, col0, row, col):
+                print(bishop.char(), end='')
+            elif bishop.can_move(board, row0, col0, row, col):
                 print('x', end='')
             else:
                 print('-', end='')
         print()
 
-        # # Создаём доску
-        # board = Board()
-        # # Цикл ввода команд игроков
-        # while True:
-        #     # Выводим доску
-        #     print_board(board)
-        #     # Подсказка по командам
-        #     print('Команды:')
-        #     print('    exit                               -- выход')
-        #     print('    <coord1> <coord2>     -- ход из клетки (coord1) в клетку (coord2)')
-        #
-        #     # Выводим чей ход
-        #     if board.current_player_color() == WHITE:
-        #         print('Ход белых: ', end='')
-        #     else:
-        #         print('Ход чёрных: ', end='')
-        #
-        #     command = input()
-        #     if command == 'exit':
-        #         break
-        #
-        #     row, col, row1, col1 = parse_coords(command)
-        #
-        #     if board.move_piece(row, col, row1, col1):
-        #         print('Ход успешен')
-        #     else:
-        #         print('Координаты некорректы! Попробуйте другой ход!')
+    # # Создаём доску
+    # board = Board()
+    # # Цикл ввода команд игроков
+    # while True:
+    #     # Выводим доску
+    #     print_board(board)
+    #     # Подсказка по командам
+    #     print('Команды:')
+    #     print('    exit                               -- выход')
+    #     print('    <coord1> <coord2>     -- ход из клетки (coord1) в клетку (coord2)')
+    #
+    #     # Выводим чей ход
+    #     if board.current_player_color() == WHITE:
+    #         print('Ход белых: ', end='')
+    #     else:
+    #         print('Ход чёрных: ', end='')
+    #
+    #     command = input()
+    #     if command == 'exit':
+    #         break
+    #
+    #     row, col, row1, col1 = parse_coords(command)
+    #
+    #     if board.move_piece(row, col, row1, col1):
+    #         print('Ход успешен')
+    #     else:
+    #         print('Координаты некорректы! Попробуйте другой ход!')
 
 
 if __name__ == '__main__':
