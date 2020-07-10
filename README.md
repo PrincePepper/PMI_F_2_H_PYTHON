@@ -3,8 +3,9 @@
 <br/><br/>
 Используется версия интерпретатора 3.7 Python, используется Anaconda
 
----------
+Ссылка на задания и лекции: [LINK](https://hackmd.io/@rX8jWCwkQNqH9R1RoYGXvw/HkML1mI4U)
 
+---------
 ***The project was released for my University course***
 
 ##### My contacts:
