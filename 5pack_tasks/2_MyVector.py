@@ -47,5 +47,6 @@ class MyVector:
 
 v1 = MyVector(-2, 5)
 v2 = MyVector(3, -4)
-v_sum = v1 + v2
+
+v_sum = v1 - v2
 print(v_sum)

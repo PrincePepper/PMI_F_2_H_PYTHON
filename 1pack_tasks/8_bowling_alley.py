@@ -5,5 +5,5 @@ a = ['I'] * a
 for i in range(n):
     d, c = [int(i) for i in input().split()]
     f = c - d
-    a[d - 1:c] = ['*'] * (f + 1)
+    a[d - 1:c] = ['.'] * (f + 1)
 print(*a, sep="")
